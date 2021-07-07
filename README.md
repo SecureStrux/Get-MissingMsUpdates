@@ -24,4 +24,4 @@ This command uses the `wsusscn2.cab` file that is stored in `C:\Temp` to query t
 ```PowerShell
 Get-MissingMsUpdates -UpdateFile C:\Temp\wsusscn2.cab -OutFile C:\Temp\MsScanReport.csv
 ```
-This command uses the `wsusscn2.cab` file that is stored in `C:\Temp` to query the system for missing updates. The output of the script is stored in the location identified after the `OutFile` parameter, `C:\Temp\MsScanReport.csv`.
+This command uses the `wsusscn2.cab` file that is stored in `C:\Temp` to query the system for missing updates. The output of the script is stored in the location identified after the `-OutFile` parameter, `C:\Temp\MsScanReport.csv`.
