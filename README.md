@@ -16,12 +16,12 @@ The location in which the ouput should be stored. The default output location is
 
 ## Example
 ```PowerShell
-Get-MissingMsUpdates -UpdateFile C:\Temp\wsuscn2.cab -OutFile C:\Temp\MsScanReport.csv
+Get-MissingMsUpdates -UpdateFile C:\Temp\wsuscn2.cab
 ```
-This command uses the `wsuscn2.cab` file that is stored in `C:\Temp` to query the system for missing updates. The output of the script is stored in the location identified after the `OutFile` parameter, `C:\Temp\MsScanReport.csv`.
+This command uses the `wsusscn2.cab` file that is stored in `C:\Temp` to query the system for missing updates. The output of the script is stored in the default location, `C:\Users\[USERNAME]\Desktop\MsScanReport.csv`.
 
 ## Example
 ```PowerShell
-Get-MissingMsUpdates -UpdateFile C:\Temp\wsuscn2.cab
+Get-MissingMsUpdates -UpdateFile C:\Temp\wsusscn2.cab -OutFile C:\Temp\MsScanReport.csv
 ```
-This command uses the `wsuscn2.cab` file that is stored in `C:\Temp` to query the system for missing updates. The output of the script is stored in the default location, `C:\Users\[USERNAME]\Desktop\MsScanReport.csv`.
+This command uses the `wsuscn2.cab` file that is stored in `C:\Temp` to query the system for missing updates. The output of the script is stored in the location identified after the `OutFile` parameter, `C:\Temp\MsScanReport.csv`.
