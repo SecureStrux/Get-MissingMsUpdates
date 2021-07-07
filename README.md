@@ -8,7 +8,7 @@ The location of the stored wsusscn2.cab file.
 The location in which the ouput should be stored. The default output location is C:\Users\[USERNAME]\Desktop\MsScanReport.csv
 
 ## Script Execution Instructions
-1.	Download an updated [wsusscn2.cab](http://go.microsoft.com/fwlink/p/?LinkID=74689) file.
+1.	Download an updated wsusscn2.cab file by [clicking here](http://go.microsoft.com/fwlink/p/?LinkID=74689).
 2.	Transfer the updated wsusscn2.cab to the offline system using approved file transfer procedures.
 3.	Point the `Get-MissingMsUpdates` PowerShell function to the wsusscn2.cab file using the `-UpdateFile` parameter.
 4.	Wait for the script to finish executing.
