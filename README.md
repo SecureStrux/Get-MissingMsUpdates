@@ -1,5 +1,5 @@
 # Get-MissingMsUpdates
-Uses the Windows Update Agent (WUA) to scan offline systems for security updates without connecting to Windows Update or Windows Server Update Services (WSUS). This script is a PowerShell variant of the one [Microsoft published](https://docs.microsoft.com/en-us/windows/win32/wua_sdk/using-wua-to-scan-for-updates-offline) in 2020 and was designed to provide enhanced functionality.
+Uses the Windows Update Agent (WUA) to scan offline systems for security updates without connecting to Windows Update or Windows Server Update Services (WSUS). This script is a PowerShell variant of the code [Microsoft published](https://docs.microsoft.com/en-us/windows/win32/wua_sdk/using-wua-to-scan-for-updates-offline) in 2020 and was designed to provide enhanced functionality.
 
 ## Parameters
 ### UpdateFile
