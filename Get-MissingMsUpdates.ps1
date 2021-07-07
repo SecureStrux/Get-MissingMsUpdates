@@ -1,4 +1,14 @@
 ﻿Function Get-MissingMsUpdates {
+ <#
+.SYNOPSIS
+    Uses the Windows Update Agent (WUA) to scan offline systems for security updates without connecting to Windows Update or Windows Server Update Services (WSUS). 
+.EXAMPLE
+    Get-MissingMsUpdates -UpdateFile C:\Temp\wsusscn2.cab
+    This command uses the wsusscn2.cab file that is stored in C:\Temp to query the system for missing updates. The output of the script is stored in the default location, C:\Users\[USERNAME]\Desktop\MsScanReport.csv.
+.EXAMPLE
+    Get-MissingMsUpdates -UpdateFile C:\Temp\wsusscn2.cab -OutFile C:\Temp\MsScanReport.csv
+    This command uses the wsusscn2.cab file that is stored in C:\Temp to query the system for missing updates. The output of the script is stored in the location identified after the OutFile parameter, C:\Temp\MsScanReport.csv.
+#>
     [cmdletbinding()]
     param (
         [Parameter(Mandatory=$true)]
