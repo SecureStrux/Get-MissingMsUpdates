@@ -61,10 +61,10 @@
         #If the required update count is greater than 0, loop through each update to create a custom powershell object.
         $requiredUpdates | ForEach-Object {
             [PSCustomObject]@{
-                Title = $Update.Title
-                Severity = $Update.MsrcSeverity
-                Description = $Update.Description
-                URL = $Update.SupportUrl
+                Title = $_.Title
+                Severity = $_.MsrcSeverity
+                Description = $_.Description
+                URL = $_.SupportUrl
             }
         } | Export-Csv $OutFile -NoTypeInformation
     }
