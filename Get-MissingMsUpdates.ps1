@@ -26,7 +26,6 @@ Function Get-MissingMsUpdates {
    
         #If the user is not running as an administrator, output error to the shell.
         $FALSE { Write-Host "PLEASE RERUN WITH ADMINISTRATIVE PRIVILEGES!" -ForegroundColor Red }
-
     }
    
     #Create a session in which the caller can perform operations that involve updates.
